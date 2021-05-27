@@ -1,0 +1,150 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+  background-image:url(ImagesAll/images/tak.jpg);
+  background-position:center;
+  
+}
+
+
+.btnclick {
+  background-color: rgb(97, 19, 73); 
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; 
+  font-size: 15px;
+  margin: 14px 150px;
+  transition-duration: 0.4s;
+  cursor: pointer
+
+}
+
+.btn {
+  
+  color:  #ff33cc;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #fefbd8;
+  color: black;
+}
+
+
+.title{
+	padding-left:300px;
+	font-size: 35px;
+	background-color:#e1e6eb;
+	font-weight: 800;
+	color: black;
+}
+
+/*container styles*/
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color:#fefbd8 ;
+  width: 50%;
+}
+
+
+.left {
+  left: 0;
+}
+.right {
+  left: 50%;
+}
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+.right::after {
+  left: -16px;
+}
+.content {
+  padding: 20px 30px;
+  background-color: rgb(230,230,250);
+  position: relative;
+  border-radius: 6px;
+}
+  position: relative;
+  border-radius: 6px;
+}
+@media screen and (max-width: 600px) {
+  .timeline::after {
+  left: 31px;
+  }
+
+.container {
+width: 100%;
+padding-left: 70px;
+padding-right: 25px;
+}
+.container::before {
+left: 60px;
+border: medium solid white;
+border-width: 10px 10px 10px 0;
+border-color: transparent white transparent transparent;
+}
+.left::after, .right::after {
+left: 15px;
+}
+.right {
+left: 0%;
+}
+}
+#image{
+  padding-left: 10px;
+  width: 100%;
+  height: auto;
+}
+
+#topButton {
+	display: none;
+	position: fixed;
+	bottom: 50px;
+	right: 10px;
+	z-index: 99;
+	font-size: 20px;
+	background-color:black;
+	color:  rgb(230,230,250);
+	cursor: pointer;
+  padding: 10px;
+  font-family:  Georgia, serif;
+
+}
+
+#topButton:hover {
+  background-color: rgb(88, 7, 82);
+
+}

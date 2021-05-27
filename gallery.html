@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Images descriptions.">
+    <!--CSS attached-->
+    <link rel="stylesheet" href="style/common.css">
+    <!--CSS attached-->
+    <title>Welcome</title>
+</head>
+
+<header>
+    <div class="main">
+        <div class="logo">
+        <img src="CSS/ImagesAll/images/logonav.png">
+        </div>
+        <ul>
+		<li><a href="home.html">Home</a></li>
+		<li><a href="selling.html">Store</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li class=""><a href="quiz.html">Quiz</a></li>
+		
+		
+<div class="dropdown">
+		<button class="dropbtn">Destinations</button>
+		  <div class="dropdown-content">
+			<a href="Heritage.html">Heritage Sites</a>
+			<a href="Beaches.html">Sandy Beaches</a>
+			<a href="Historical.html">Historical Sites</a>
+			<a href="Hillcountry.html">Hillcountry</a>
+			
+			
+			
+		  </div>
+		</div>
+		<li><a href="sitemap.html">Site Map</a></li>
+		<li><a href="feedback.html">Feedback</a></li>
+		<li><a href="profiles.html">Profiles</a></li>
+		
+		</div>
+</header>
+
+
+<body class="gallery">
+    <!--Javascript attached-->
+    <script src="colourPick.js"></script>
+    <!--Javascript attached ENDS-->
+
+    <!--Heading-->
+    <div class="heading1">
+        <h1 id="h1">A picture is worth a thousand words</h1>
+    </div>
+    <!--Heading ENDS-->
+
+    <!--Change Heading colour-->
+    <div class="colour_1">
+        <select class="colours" name="colorPick" onchange="change_color(this);">
+            <option value="0">Select Background Color</option>
+            <option value="1">Blue</option>
+            <option value="2">Cyan</option>
+            <option value="3">White</option>
+            <option value="4">red</option> 
+            <option value="5">Pink</option> 
+            <option value="6">Black</option> 
+            <option value="7">Purple</option>
+        </select>
+    </div>
+    <!--Change Heading colour ENDS-->
+	<br>
+	<br>
+
+    <!--Change Text Colour-->
+    <div class="colour_2">
+        <select name="h1" onchange="change_text_color(this.h1);">
+            <option value="0">Select Text Color</option>
+            <option value="1">Blue</option>
+            <option value="2">Cyan</option>
+			<option value="3">White</option>
+            <option value="4">red</option>
+        </select>
+    </div> 
+	
+	
+	<br>
+
+    
+
+    <!--Images-->
+    <div class="container left">
+    <div class="content">
+        <a href="pic 1.html"  target="_blank" > <img src="gal_img/sigiriya.jpg" alt="sigiriya"  width="45%" height="45%"></a>
+	</div>
+    </div>
+	
+	<div class="container left">
+    <div class="content">
+        <a href="pic 2.html"  target="_blank" > <img src="gal_img/hill.jpg" alt="hill"  width="45%" height="45%"></a>
+	</div>  
+	</div>
+	
+	<div class="container left">
+    <div class="content">
+	<a href="pic 3.html"  target="_blank" > <img src="gal_img/beach.jpg" alt="beach"  width="45%" height="45%"></a>
+	</div>
+	</div>
+	
+	<div class="container left">
+    <div class="content">
+	<a href="pic 4.html"  target="_blank" > <img src="gal_img/galle.jpg" alt="galle"  width="45%" height="45%"></a>
+	</div>
+	</div>
+	
+	<div class="container left">
+    <div class="content">
+	<a href="pic 5.html"  target="_blank" > <img src="gal_img/anuradhapura.jpg" alt="anuradhapura"  width="45%" height="45%"></a>
+	</div>
+	</div>
+	
+	<footer id="footer" style="color:white; text-align:center">
+	Copyrights &copy; | 2020 | All rights reserved to FOOTPRINTS IN PARADISE<br><a href="">Page Done By: <a href="ovara.html">Rinoza Jiffry</a>
+	<div class="social"> <!--social media icons-->
+		<a href ="https://www.instagram.com/"><img src="CSS/ImagesAll/images/ig.png" width="25" height="25"></a>
+		<a href = "https://www.facebook.com/"><img src="CSS/ImagesAll/images/fb.png"width="25" height="25"></a>
+		<a href = "https://www.twitter.com/" ><img src="CSS/ImagesAll/images/twitter.png"width="25" height="25"></a>
+		<a href = "https://www.linkedin.com/"><img src="CSS/ImagesAll/images/linkedin.png"width="25" height="25"></a>
+	</div>
+</footer> 
+
+<!-- code for button to navigate back to the top of the page --> 
+<script>
+	var topbutton = document.getElementById("topButton");
+	
+	window.onscroll=function() {scrollFunction()};
+	
+	function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				topbutton.style.display = "block";
+			} else {
+				topbutton.style.display = "none";
+			}
+	}
+	
+	function goTop() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+ }
+ </script>
+	
+</body>
+
+</html>

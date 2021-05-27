@@ -1,0 +1,176 @@
+.fileOne { 
+    background-image: 
+	url('s.jpg');
+}  
+
+.fileTwo { 
+    background-image: 
+	url('t.jpg');
+}  
+
+.fileThree { 
+    background-image: 
+	url('u.jpg');
+} 
+
+ .fileFour { 
+    background-image: 
+	url('v.jpg');
+}  
+
+.fileFive { 
+    background-image: 
+	url('w.jpg');
+}  
+
+.gallery { 
+    background-color: linen;
+}
+
+
+.headings { 
+    text-align: center;
+	
+} 
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: rgb(230,230,250);
+  position: relative;
+  border-radius: 6px;
+}
+
+
+ #image{
+    padding-left: 10px;
+    width: 100%;
+    height: auto;
+  }
+
+.colour_1 { 
+    text-align: center; 
+} 
+
+.colour_2 { 
+    text-align:center; 
+} 
+
+.colours { 
+    margin: 20px 0 20px 0; 
+    padding: 10px; 
+    font-size: 15px; 
+    border-radius: 10px; 
+    width: 35%;
+}
+
+
+
+
+.heading1{
+	text-align:center;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 0px;
+  padding: 0;
+  padding-left: 650px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color:  #A9A9A9;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+}
+
+li:hover {
+  background-color: #d9cef5;
+}
+
+.active {
+  background-color:#d9cef5;
+}
+.dropbtn {
+  background-color: #8d8557;
+  color: white;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: none;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #8d8557;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {background-color: #d9cef5;}
+	
+.dropdown:hover .dropdown-content {display: block;}
+	
+.dropdown:hover .dropbtn {background-color: rgb(97, 19, 73);}
+	
+    
+.logo img{
+  float: left;
+  width: 150px;
+  height: auto;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+footer{
+
+    background-color:black;
+    position: relative;
+    height:80px;
+    margin-top:0px;
+    clear:both;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    }
+
+footer a {
+    text-decoration:none;
+    color:white;
+}
+social{
+  margin-top: 10px;
+}

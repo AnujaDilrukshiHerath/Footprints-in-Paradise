@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FOOTPRINTS IN PARADISE</title>
+<link rel="stylesheet" href="CSS/style1.css">
+<meta name="userview" content="width=device-width, initial-scale=1.0>"
+</head>
+<body>
+
+<header>
+    <div class="main">
+        <div class="logo">
+        <img src="CSS/ImagesAll/images/logonav.png">
+        </div>
+        <ul>
+		<li class="active"><a href="#">Home</a></li>
+		<li class=""><a href="selling.html">Store</a></li>
+		<li class=""><a href="gallery.html">Gallery</a></li>
+		<li class=""><a href="quiz.html">Quiz</a></li>
+		
+<div class="dropdown">
+		<button class="dropbtn">Destinations</button>
+		  <div class="dropdown-content">
+			<a href="Heritage.html">Heritage Sites</a>
+			<a href="beaches.html">Sandy Beaches</a>
+			<a href="Historical.html">Historical Sites</a>
+			<a href="hillcountry.html">Hillcountry</a>
+			
+			
+			
+		  </div>
+		</div>
+		<li><a href="sitemap.html">Site Map</a></li>
+		<li><a href="feedback.html">Feedback</a></li>
+		<li><a href="profiles.html">Profiles</a></li>
+		</div>
+       
+		
+        </ul>
+        <div class="changePic">
+		<div class="title">
+        <img src="CSS/ImagesAll/images/logo.png">
+        </div>
+		</div>
+</header>
+<section class="destinations">
+<div class="description">
+ <div id="main-item" class="main-item">
+    <p>Ayubowan! Welcome to,</p><h1><b>Sri Lanka</b></h1>
+         <p>The country that has everything:from beaches to safaris! You can find a wide range of destinations and many more adventures on this paradise island in the Indian ocean.
+		 So come leave your frintprint and discover this amazing country and its culture!</p>  
+</div>
+</div>
+
+
+<h4>Featured Destinations</h4>
+
+<div class="row">
+  <div class="column">
+    <a href="hillcountry.html">
+    <img src="CSS/ImagesAll/images/ella.jpg">
+	</a>
+	<h2>Ella</h2>
+    <p>Take the train over the nine arch bridge and discover the beauty of the hillcountry</p>
+  </div>
+  <div class="column">
+    <a href="Historical.html">
+    <img src="CSS/ImagesAll/images/old.jpg">
+	</a>
+	<h2>Anuradhapura</h2>
+    <p>Come Discover the magnificent buildings built thousands of years ago....</p>
+  </div>
+  <div class="column">
+    <a href="beach.html">
+    <img src="CSS/ImagesAll/images/beach.webp">
+	</a>
+	<h2>Hikkaduwa</h2>
+    <p>Love the beach? This is the best place to go! Come be your own kind of mermaid under the sea full of corals!</p>
+  </div>
+</div>
+</div>
+</section>
+<section class="shop">
+<div class="shoprow">
+<h3>Buy the most famous products made in Sri Lanka Online!</h3>
+<p>Order Now! Shipping is absolutely FREE!</p>
+<div class="shopbtn">
+ <a href="selling.html" class="btn3">BUY NOW</a>
+ </div>
+ </div>
+<button onclick="goTop()" id="topButton"> TOP</button>
+
+</section>
+<footer id="footer" style="color:white; text-align:center">
+	Copyrights &copy; | 2020 | All rights reserved to FOOTPRINTS IN PARADISE<br><a href="">Page Done By: <a href="ovara.html">Ovara Perera</a>
+	<div class="social"> <!--social media icons-->
+		<a href ="https://www.instagram.com/"><img src="CSS/ImagesAll/images/ig.png" width="25" height="25"></a>
+		<a href = "https://www.facebook.com/"><img src="CSS/ImagesAll/images/fb.png"width="25" height="25"></a>
+		<a href = "https://www.twitter.com/" ><img src="CSS/ImagesAll/images/twitter.png"width="25" height="25"></a>
+		<a href = "https://www.linkedin.com/"><img src="CSS/ImagesAll/images/linkedin.png"width="25" height="25"></a>
+	</div>
+   
+</footer> 
+<script>
+	var topbutton = document.getElementById("topButton");
+	
+	window.onscroll=function() {scrollFunction()};
+	
+	function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				topbutton.style.display = "block";
+			} else {
+				topbutton.style.display = "none";
+			}
+	}
+	
+	function goTop() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+ }
+ </script>
+</body>
+</html>
+   

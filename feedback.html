@@ -1,0 +1,196 @@
+<html>
+	<head>
+	<style>
+	
+body{
+    background-size: cover;
+	background-position: fixed;
+	background-image: url(CSS/ImagesAll/images/oceanbg.jpg);
+}
+.form {
+	font-family:  Arial;
+	width: 500px;
+	padding: 30px;
+	background: #FFFFFF;
+	margin: 50px auto;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+}
+h1{
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #797979;
+	font-weight: 100;
+	padding: 20px;
+	margin: -30px -30px 30px -30px;
+}
+.form input[type="text"], 
+.form input[type="email"],
+.form textarea
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	margin-bottom: 10px;
+	font: 16px Arial, Helvetica, sans-serif;
+	height: 45px;
+}
+.form textarea{
+	resize:none;
+	overflow: hidden;
+}
+.button {
+  background-color: rgb(97, 19, 73); 
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; 
+  font-size: 16px;
+  margin: 14px 210px;
+  transition-duration: 0.4s;
+  cursor: pointer
+
+}
+
+
+.submit {
+  background-color: white; 
+  color:  #797979;
+  border: 2px solid #797979;
+}
+
+.submit:hover {
+  background-color: #d9cef5;
+  color: white;
+}
+</style>
+	
+	<script>
+	function validateForm() {
+   var x = document.forms["myForm"]["fname"].value;
+   var z = document.forms["myForm"]["Email Address"].value;
+   var R1=document.getElementById('Beg').checked;
+   var R2=document.getElementById('Int').checked;
+   var R3=document.getElementById('Adv').checked;
+   if (x == "") {
+    alert("Please provide your Full Name!");
+    return false;
+	}
+   if (z == "") {
+    alert("Please provide your Email Address!");
+    return false;
+   }
+  if(R1==false && R2==false && R3==false){
+   alert("Please select an option!");
+    return false;
+   }
+   else{
+   myFunction();
+   }
+  }
+  
+
+  
+ 
+</script>
+	<title> Feedback </title>
+	</head>
+	<body>
+	 <link rel="stylesheet" type="text/css"href="CSS/stylecommon.css">
+	<header>
+     <div class="main">
+        <div class="logo">
+        <img src="CSS/ImagesAll/images/logonav.png">
+        </div>
+        <ul>
+		<li><a href="home.html">Home</a></li>
+		<li><a href="selling.html">Store</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a href="quiz.html">Quiz</a></li>
+		
+		
+<div class="dropdown">
+		<button class="dropbtn">Destinations</button>
+		  <div class="dropdown-content">
+			<a href="Heritage.html">Heritage Sites</a>
+			<a href="beaches.html">Sandy Beaches</a>
+			<a href="Historical.html">Historical Sites</a>
+			<a href="hillcountry.html">Hillcountry</a>
+			
+			
+			
+		  </div>
+		</div>
+		<li><a href="sitemap.html">Site Map</a></li>
+		<li class="active"><a href="#">Feedback</a></li>
+		<li><a href="profiles.html">Profiles</a></li>
+		
+		</div>
+ </header>
+	<div class="form">
+	<h1> Feedback Form </h1>
+	
+    <form name="myForm" onsubmit="validateForm()" method="post">
+	
+    <label for="fname">Enter Your Name: </label>
+    <input type="text" id="name" name="fname" size="50"><br><br>
+	<label for="Email Address"> Email Address:</label>
+    <input type="email" id="Email Address" name="Email Address"  size="50"><br><br>
+	<label for="comment">Give us your comments..</label><br>
+	<textarea rows="4" cols="50" name="comment" form="usrform" id="comment">
+     </textarea><br><br>
+	<p>Please rate our site </p><br>
+    <input type="radio" id="Beg" name="level" value="Excellent" >
+    <label for="male">Excellent</label><br>
+    <input type="radio" id="Int" name="level" value="Good">
+    <label for="female">Good</label><br>
+    <input type="radio" id="Adv" name="level" value="Bad">
+    <label for="other">Bad</label><br><br>
+	
+	<button class="button submit" name = "submit" onclick="validateForm(this.form)">submit</button>
+	 </div>
+	 <script>
+	 function myFunction(){
+	  var inputVal = document.getElementById("name").value;
+	  var ele = document.getElementsByName('level');
+	  var comment=document.getElementById('comment').value;
+      if (ele[0].checked){
+	  alert("Dear"+" "+inputVal+" "+","+"Thank you very much for your feedback. You have rated our site as"+" "+ele[0].value+" "+"and your comment was"+comment)
+	 }
+	  if (ele[1].checked){
+	  alert("Dear"+" "+inputVal+" "+","+"Thank you very much for your feedback. You have rated our site as"+" "+ele[1].value+" "+"and your comment was"+comment)
+	 }
+	  if (ele[2].checked){
+	  alert("Dear"+" "+inputVal+" "+","+"Thank you very much for your feedback. You have rated our site as"+" "+ele[2].value+" "+"and your comment was"+comment)
+	 }
+	 }
+	 </script>
+	 
+
+    </form>
+	<footer id="footer" style="color:white; text-align:center">
+	Copyrights &copy; | 2020 | All rights reserved to FOOTPRINTS IN PARADISE<br><a href="">Page Done By: <a href="ovara.html">Ovara Perera</a>
+	<div class="social"> <!--social media icons-->
+		<a href ="https://www.instagram.com/"><img src="CSS/ImagesAll/images/ig.png" width="25" height="25"></a>
+		<a href = "https://www.facebook.com/"><img src="CSS/ImagesAll/images/fb.png"width="25" height="25"></a>
+		<a href = "https://www.twitter.com/" ><img src="CSS/ImagesAll/images/twitter.png"width="25" height="25"></a>
+		<a href = "https://www.linkedin.com/"><img src="CSS/ImagesAll/images/linkedin.png"width="25" height="25"></a>
+	</div>
+</footer> 
+	</body>
+
+
+
+</html>

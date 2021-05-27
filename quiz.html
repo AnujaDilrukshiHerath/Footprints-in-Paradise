@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz</title>
+<link rel="stylesheet" href="CSS/stylecommon.css">
+<link rel="stylesheet" href="CSS/quiz.css">
+<link rel="stylesheet" href="CSS/StyleSheet.css">
+<meta name="userview" content="width=device-width, initial-scale=1.0>"
+</head>
+<body>
+
+<header>
+    <div class="main">
+        <div class="logo">
+        <img src="CSS/ImagesAll/images/logonav.png">
+        </div>
+        <ul>
+		<li class="active"><a href="home.html">Home</a></li>
+		<li ><a href="selling.html">Store</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a href="quiz.html">Quiz</a></li>
+		
+<div class="dropdown">
+		<button class="dropbtn">Destinations</button>
+		  <div class="dropdown-content">
+			<a href="Heritage.html">Heritage Sites</a>
+			<a href="beaches.html">Sandy Beaches</a>
+			<a href="Historical.html">Historical Sites</a>
+			<a href="hillcountry.html">Hillcountry</a>
+			
+			
+			
+		  </div>
+		</div>
+		<li><a href="sitemap.html">Site Map</a></li>
+		<li><a href="feedback.html">Feedback</a></li>
+		<li><a href="profiles.html">Profiles</a></li>
+		</div>
+       
+		
+      
+ </header>
+<h1></h1>
+<div class="timeline">
+<style>
+body {
+font-family: 'Lato', sans-serif;
+background-image:url(CSS/ImagesAll/images/oceanbg.jpg); 
+}
+
+#quiz {
+margin-left: 300px;
+background: white;
+padding: 20px 20px 20px 20px;
+width: 60%;
+border-radius: 30px;
+float: left;
+}
+
+.left{
+margin-left:10%;
+}
+
+
+
+#after_submit {
+visibility: hidden;
+
+}
+
+#button {
+background: green;
+border: none;
+border-radius: 5px;
+padding: 10px;
+color: white;
+transition-duration: .5s;
+margin-top: 15px;
+
+}
+
+#button:hover {
+background: purple;
+border: 1px solid green;
+color: black;
+cursor: pointer;
+
+}
+</style>
+
+<script>
+function check(){
+
+var question1 = document.quiz.question1.value;
+var question2 = document.quiz.question2.value; 
+var question3 = document.quiz.question3.value; 
+var question4 = document.quiz.question4.value; 
+var question5 = document.quiz.question5.value; 
+var question6 = document.quiz.question6.value; 
+var question7 = document.quiz.question7.value; 
+var question8 = document.quiz.question8.value; 
+var question9 = document.quiz.question9.value; 
+var question10 = document.quiz.question10.value; 
+var correct = 0;
+
+   if (question1 == "Yes") {
+correct++;
+}
+   if (question2 == "King Kashyapa") {
+correct++;
+}
+   if (question3 == "660 feet") {
+correct++;
+}
+   if (question4 == "Prince Danta and Princess Hemamala") {
+correct++;
+}
+   if (question5 == "Ella Rock") {
+correct++;
+}
+   if (question6 == "King Vikramabahu 111") {
+correct++;
+}
+   if (question7 == "Anuradhapura") {
+correct++;
+}
+   if (question8 == "February 4th of 1948") {
+correct++;
+}
+   if (question9 == "Prince Vijaya") {
+correct++;
+}
+   if (question10 == "Theravada Buddhists") {
+correct++;
+}
+
+var messages = ["Great job!", "That's just okay", "You have to be improve yourself"];
+var pictures = ["smile1.jpg", "smile2.jpg", "smile3.jpg"];
+
+var range;
+
+   if (correct < 4) {
+range = 2;
+}
+
+  if (correct > 0 && correct > 4) {
+range = 1;
+}
+
+   if (correct > 8) {
+range = 0;
+}
+
+document.getElementById("after_submit").style.visibility = "visible";
+
+document.getElementById("message").innerHTML = messages[range];
+document.getElementById("number_correct").innerHTML = "You got " + correct + " correct out of 10";
+document.getElementById("picture").src = pictures[range];
+
+ }
+</script>
+
+ <title>Quiz time</title>
+</head>
+
+<body>
+ <h1><font color="black">Try this out - Quiz Time!</font></h1>
+ 
+ <form id = "quiz" name = "quiz">
+<div>
+ <div class="left">
+ <p>01) Does Sri Lanka has multicultural society?</p>
+ <input type="radio" id = "mc" name="question1" value="Yes"> Yes<br>
+ <input type="radio" id = "mc" name="question1" value="No"> No<br> 
+ 
+ <p>02) Who has made Sigiriya?</p>
+ <input type="radio" id = "mc" name="question2" value="King Dutugamunu">King Dutugamunu<br>
+ <input type="radio" id = "mc" name="question2" value="King Kashyapa">King Kashyapa<br>  
+ 
+ <p>03) How tall is Sigiriya?</p>
+ <input type="radio" id = "mc" name="question3" value="750 feet">750 feet<br>
+ <input type="radio" id = "mc" name="question3" value="660 feet">660 feet<br> 
+ 
+ <p>04) Who brought the sacred tooth relic to Sri Lanka?</p>
+ <input type="radio" id = "mc" name="question4" value="Mihindu Thero">Mihindu Thero<br>
+ <input type="radio" id = "mc" name="question4" value="Prince Danta and Princess Hemamala">Prince Danta and Princess Hemamala<br> 
+ 
+ <p>05) "Adams peak" belongs to where?</p>
+ <input type="radio" id = "mc" name="question5" value="World's end">World's end<br>
+ <input type="radio" id = "mc" name="question5" value="Ella Rock">Ella Rock<br> 
+ 
+ <p>06) Embekka Devalaya was built by?</p>
+ <input type="radio" id = "mc" name="question6" value="King Vikramabahu 111">King Vikramabahu 111<br>
+ <input type="radio" id = "mc" name="question6" value="King Saddatissa">King Saddatissa<br> 
+ 
+ <p>07) Tissa wewa was located in which district?</p>
+ <input type="radio" id = "mc" name="question7" value="Polonnaruwa">Polonnaruwa<br>
+ <input type="radio" id = "mc" name="question7" value="Anuradhapura">Anuradhapura<br> 
+ 
+ <p>08) In which year Sri Lanka gain independence?</p>
+ <input type="radio" id = "mc" name="question8" value="March 08th of 1845">March 08th of 1845<br>
+ <input type="radio" id = "mc" name="question8" value="February 4th of 1948">February 4th of 1948<br> 
+ 
+ <p>09) Who was the first king in Sri Lanka?</p>
+ <input type="radio" id = "mc" name="question9" value="Prince Vijaya">Prince Vijaya<br>
+ <input type="radio" id = "mc" name="question9" value="Sri Vikrama Rajasinghe">Sri Vikrama Rajasinghe<br> 
+ 
+ <p>10) What is the main religion in Sri Lanka?</p>
+ <input type="radio" id = "mc" name="question10" value="Theravada Buddhists">Theravada Buddhists<br>
+ <input type="radio" id = "mc" name="question10" value="Hindus">Hindus<br> 
+ 
+ <input id = "button" type = "button" value = "Finished!!" onclick = "check();">
+ </div>
+ 
+ </form>
+ 
+ <div id = "after_submit">
+ 
+ <p id = "message"></p>
+ <p id = "number_correct"></p>
+ <img id = "Web course work">
+ 
+ 
+ </div>
+</div>
+
+<button onclick="goTop()" id="topButton"> TOP</button>
+	<!-- footer -->
+    <footer id="footer" style="color:white; text-align:center">
+	Copyrights &copy; | 2020 | All rights reserved to FOOTPRINTS IN PARADISE<br>Page Done By:<a href="Anuja.html">Anuja Herath</a>
+	<div class="social"> <!--social media icons-->
+		<a href ="https://www.instagram.com/"><img src="CSS/ImagesAll/images/ig.png" width="25" height="25"></a>
+		<a href = "https://www.facebook.com/"><img src="CSS/ImagesAll/images/fb.png"width="25" height="25"></a>
+		<a href = "https://www.twitter.com/" ><img src="CSS/ImagesAll/images/twitter.png"width="25" height="25"></a>
+		<a href = "https://www.linkedin.com/"><img src="CSS/ImagesAll/images/linkedin.png"width="25" height="25"></a>
+	</div>
+    </footer>
+	<!-- code for button to navigate back to the top of the page --> 
+<script>
+	var topbutton = document.getElementById("topButton");
+	
+	window.onscroll=function() {scrollFunction()};
+	
+	function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				topbutton.style.display = "block";
+			} else {
+				topbutton.style.display = "none";
+			}
+	}
+	
+	function goTop() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+ }
+ </script>
+</body>
+
+
+</html>
